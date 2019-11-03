@@ -1,0 +1,79 @@
+File:    README
+Author:  Dan Brekke
+Program: class example
+Date:    
+
+BUILDING THE PROGRAM
+   This program was written in C++ and distributed to be built on a 
+   Linux system using the g++ compiler.  To build the program, type 'make' 
+   to create the executable called 'prog'
+
+RUNNING THE PROGRAM
+   Type 'prog' at the command prompt after building the program.
+
+PROGRAM DESCRIPTION
+   This program will read ints from the keyboard, output them, sort
+   them ascendingly, then output them again. 
+
+PROGRAM INPUT
+   All input comes from the keyboard.  The program will read until the
+   sentinel value 0 is entered. Input can be entered all on one line,
+   or separate lines, or a combination of the two.
+   For example:
+      5
+      4 6
+      3 0
+   
+PROGRAM OUTPUT
+   All output is written to the screen.  The output will be the original
+   array as entered from the keyboard and the result of the sorted array.
+   For example:
+      array: 5 4 6 3 
+      sorted array: 3 4 5 6 
+
+PROGRAM DESIGN
+   This program stores all the ints in an array.
+
+   The general algorithm
+      read the ints into an array
+      output the array
+      sort the array
+      output the array
+
+   Function input and output, preconditions and postconditions can
+   be found in the documentation for each file.
+
+FILE INDEX
+   file             function(s)        description
+   --------------   -----------------  ----------------------
+   constants.h                         constant declarations
+   
+   main.cpp         main               calls all other functions
+   
+   NOTES                               describes purpose of this class example
+
+   output.cpp       output             outputs results to the screen
+   
+   read.cpp         read               read from the keyboard into the array
+
+   sort.cpp         sort               sorts the array ascendingly
+
+   makefile                            builds executable
+
+   README                              this file
+
+
+PROGRAM TESTING
+   This program was tested with different sets of data.  
+
+   Checked for a normal set of data partially filling the array
+   
+   Checked for the number of values exceeding the array size
+   
+   Checked for input of 1 value and the sentinel
+
+   Checked for input of just the sentinel
+
+   There are no known bugs.  Any errors should be reported to:
+   brekke@mnstate.edu
+

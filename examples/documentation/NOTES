@@ -1,0 +1,9 @@
+NOTE: This file is not part of the typical distribution.  It is here only
+to give some notes about the purpose of the distribution.
+
+This distribution demonstrates multiple things
+1) modularization (putting functions in separate files)
+   - function prototypes
+2) makefile (to make compiling and linking of modules more convenient)
+3) using a header file for constants
+4) documentation including a README file

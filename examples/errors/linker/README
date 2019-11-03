@@ -1,0 +1,13 @@
+This example contains a linker error.  The linker error occurs because
+the implementation for the Circle class is contained in the same file
+(circle.h) with the definition (specification).  Since both main.cpp 
+and func.cpp both include circle.h, they compile correctly but a linker
+error occurs due to multiple definitions of each Circle method.  In other
+words, when main.o and func.o are linked together, they both contain
+the Circle class implementation.
+
+To prevent a linker error, the class must be compiled separately. The file
+circle.h should contain only the definition (specification) of the class
+and circle.cpp should contain the implementation.  circle.cpp is compiled
+separately and circle.h is included by main.cpp and func.cpp.
+
